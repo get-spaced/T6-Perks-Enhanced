@@ -54,3 +54,7 @@ get_dvar_default(dvar, def, type) {
       return getdvar(dvar);
   }
 }
+
+is_bank_map() {
+  return getdvar("mapname") == "zm_transit" || map == "zm_highrise" || map == "zm_buried";
+}

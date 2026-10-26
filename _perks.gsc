@@ -188,6 +188,9 @@ record_fill_bank() {
   if (!should_refill)
     return;
 
+  if (!is_bank_map())
+    return;
+
   self.account_value = int(level.bank_account_max);
   self maps\mp\zombies\_zm_stats::set_map_stat("depositBox", self.account_value, level.banking_map);
 }
