@@ -44,51 +44,7 @@ on_player_connected() {
   self thread record_fill_bank();
   self thread mule_kick_weapon_hud();
   self thread phd_grenade_watch();
-
-  // self thread give_all_perks();
 }
-
-// give_all_perks() {
-//   wait 3;
-
-//   level.zombiemode_using_vulture_perk = 1;
-
-//   if (isdefined(level.zombiemode_using_revive_perk) && level.zombiemode_using_revive_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_quickrevive", false);
-
-//   if (isdefined(level.zombiemode_using_juggernaut_perk) && level.zombiemode_using_juggernaut_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_armorvest", false);
-
-//   if (isdefined(level.zombiemode_using_sleightofhand_perk) && level.zombiemode_using_sleightofhand_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_fastreload", false);
-
-//   if (isdefined(level.zombiemode_using_doubletap_perk) && level.zombiemode_using_doubletap_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_rof", false);
-
-//   if (isdefined(level.zombiemode_using_marathon_perk) && level.zombiemode_using_marathon_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_longersprint", false);
-
-//   if (isdefined(level.zombiemode_using_additionalprimaryweapon_perk) && level.zombiemode_using_additionalprimaryweapon_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_additionalprimaryweapon", false);
-
-//   if (isdefined(level.zombiemode_using_deadshot_perk) && level.zombiemode_using_deadshot_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_deadshot", false);
-
-//   if (isdefined(level.zombiemode_using_chugabud_perk) && level.zombiemode_using_chugabud_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_finalstand", false);
-
-//   if (isdefined(level.zombiemode_using_divetonuke_perk) && level.zombiemode_using_divetonuke_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_flakjacket", false);
-
-//   if (isdefined(level.zombiemode_using_electric_cherry_perk) && level.zombiemode_using_electric_cherry_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_grenadepulldeath", false);
-
-//   if (isdefined(level.zombiemode_using_vulture_perk) && level.zombiemode_using_vulture_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_nomotionsensor", false);
-
-//    if (isdefined(level.zombiemode_using_tombstone_perk) && level.zombiemode_using_tombstone_perk)
-//     self maps\mp\zombies\_zm_perks::give_perk("specialty_scavenger", false);
-// }
 
 player_too_many_weapons_monitor() {
   if (getdvar("mapname") != "zm_prison")
