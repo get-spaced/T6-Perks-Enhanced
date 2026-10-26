@@ -176,7 +176,6 @@ staminup_handler() {
   }
 }
 
-
 record_fill_bank() {
   self endon("disconnect");
   level endon("end_game");
